@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <style>
 
     .font-lato{
@@ -22,7 +23,7 @@
 <header >
  <!-- nav start    -->
 <nav class="w-4/5 mt-7 mx-auto  ">
- <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] rounded-[300px]">
+ <div class="navbar  md:bg-[#F85559] rounded-[300px]">
  <div class="navbar-start">
  <div class="flex">
             
@@ -35,30 +36,31 @@
        
  </div>
  <div class="dropdown">
- <label tabindex="0" class="btn btn-ghost btn-circle lg:hidden">
+ <label tabindex="0" class="btn btn-ghost btn-circle  lg:hidden order-last md:order-center   ">
  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
  </label>
- <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52  ">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li>All Fruits</li>
-              <input type="text" placeholder="Search here " class="input lg:w-76 md:auto rounded-3xl bg-[FFF]  " />
+ <ul tabindex="0" class="menu menu-sm text-xs dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-24  ">
+              <li><a class="text-xs">Home</a></li>
+              <li><a class="text-xs">About Us</a></li>
+              <li><a class="text-xs">Shop</a></li>
+              <li><a class="text-xs">All Fruits</li>
+              <input  type="text" placeholder="Search  " class="input w-20 text-xs rounded-3xl bg-[FFF] md:hidden " />
               
           
  </ul>
  </div>
  </div>
        
- <div class="navbar-center    ">
+ <div class="navbar-center order-first md:order-last lg:order-none ">
  <img class="h-14 w-12 " src="./images/logo.png" alt="">
- <a class=" text-black normal-case font-bold text-4xl md:text-white lg:text-white pl-1.5">Fruit Burst</a>
+ <a class=" text-black normal-case font-bold text-4xl md:text-4xl md:text-white md:pr-5 lg:text-white lg:pl-1.5">Fruit Burst</a>
+ 
  </div>
 
 
- <div class=" navber-end hidden lg:flex  relative  lg:ml-44">
+ <div class=" navber-end hidden lg:flex md:flex  relative md:order-first  lg:order-none  lg:ml-44">
 
-    <input type="text" placeholder="Search here" class="input lg:w-76 md:auto rounded-3xl bg-[FFF]  " />
+    <input type="text" placeholder="Search here" class="input lg:w-76  rounded-3xl bg-[FFF]  " />
     <i class="fa-solid fa-magnifying-glass absolute text-center top-4 right-4 text[#121212]"></i>
 
  
@@ -68,6 +70,9 @@
 </div>    
              
 </nav>  
+
+<!-- nav for phone -->
+
 
 <!-- banner -->
 <div class=" w-4/5 mx-auto mt-7 ">
@@ -427,7 +432,7 @@ min
 <p class="font-base mt-3.5 mb-9">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br>Latin literature from 45 BC, making it over 2000 years old.</p>
 </div>
 
-<section class=" mb-10 grid grid-cols-1 lg:grid-cols-3 gap-5 ">
+<section class="hidden lg:block lg:mb-10 lg:grid  lg:grid-cols-3 lg:gap-5 ">
 
 <div class="">
   <div class="flex">
@@ -444,7 +449,7 @@ min
    </div>
   </div>
 
-<!-- end -->
+<!-- 2nd -->
 
 <div class="flex">
   <div class="">
@@ -460,8 +465,8 @@ min
   </div>
 
  </div>
- <!-- end -->
- <div class=" flex md:flex-row flex-col  ">
+ <!-- 3rd -->
+ <div class=" flex  ">
   <div class="mt-7">
     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12  bg-slate-200 p-2.5 rounded-3xl mt-4 ">
       <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
@@ -479,19 +484,20 @@ min
 
 </div>
 <!-- img -->
-<div class="order-first lg:order-none" >
+<div class="" >
 <img src="./images/whychoose1.png" alt="">
 </div>
 <!-- oder last -->
-<div class="order-last ">
+<div class="order-last  ">
    
   
     
-  <div class=" flex flex-row-reverse lg:flex-row text-left md:text-right border-2 border-indigo-600 ">
+  <div class=" flex  ">
     
-      <div class="border-2 border-red-300 mr-2.5  ">
+      <div class=" mr-2.5 text-end ">
        <h3 class=" text-xl font-extrabold">Integrated Supplier</h3>
-       <p class=" w-28 border border-slate-500 my-2.5 lg:ml-36"></p>
+       
+       <p class=" w-28 border border-slate-500 my-2.5 ml-40"></p>
        <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
       </div>
       <div class="mt-4">
@@ -503,9 +509,9 @@ min
 
 
      <div class="flex">
-      <div class="text-end border-solid mt-3.5 pr-2.5 ">
+      <div class="text-end  mt-3.5 pr-2.5 ">
         <h3 class="text-xl font-extrabold">Sustainable Practice</h3>
-        <p class="w-28 ml-44 border border-slate-500 my-2.5"></p>
+        <p class="w-28 ml-40 border border-slate-500 my-2.5"></p>
         <p class="text-sm font-medium"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
       </div>
       <div class="mt-6">
@@ -518,20 +524,114 @@ min
      <div class="flex">
       <div class="text-center lg:text-end border-solid mt-5 mr-2.5 ">
         <h3 class="text-xl font-extrabold">The Benefits Only</h3>
-        <p class="w-28 ml-44 border border-slate-500 my-2.5"></p>
+        <p class="w-28 ml-40 border border-slate-500 my-2.5"></p>
         <p class="text-sm font-medium"> Professional employees are there for you to pick the most amazing and fresh fruits.</p>
       </div>
       <div class="mt-6">
         <i class="fa-regular fa-thumbs-up text-3xl bg-slate-200 w-12 h-12 flex items-center justify-center rounded-3xl "></i>
       </div>
-     </div>
-     <!-- <i class="fa-regular fa-thumbs-up"></i> -->
+      </div>
+      </div>
+
+    </section>
 
 
+    <!-- phone and lablet start -->
+      <!-- img -->
+<section class="lg:hidden">
+<div class="md:w-4/5 md:my-0 md:mx-auto" >
+  <img class="" src="./images/whychoose1.png" alt="">
+  </div>
+
+ <!-- first -->
+ <div class="text-center">
+   <div class=" flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12  bg-slate-200 p-2.5 rounded-3xl mt-4 ">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+    </svg>
+    
+   </div>
+   <div class="">
+    <h3 class=" text-xl font-extrabold">Dedicated Team</h3>
+    <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+    <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+   </div>
+  </div>
+
+ <!-- second -->
+   <div class="  text-center">
+    <div class=" flex justify-center items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12  bg-slate-200 p-2.5 rounded-3xl mt-8 ">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z" />
+      </svg>
+     
+    </div>
+    <div class="">
+     <h3 class=" text-xl font-extrabold">Fresh is Best</h3>
+     <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+     <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+    </div>
+   </div>
+
+<!-- third -->
+
+<div class="  text-center">
+  <div class=" flex justify-center items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-12  bg-slate-200 p-2.5 rounded-3xl mt-4 ">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M21 11.25v8.25a1.5 1.5 0 01-1.5 1.5H5.25a1.5 1.5 0 01-1.5-1.5v-8.25M12 4.875A2.625 2.625 0 109.375 7.5H12m0-2.625V7.5m0-2.625A2.625 2.625 0 1114.625 7.5H12m0 0V21m-8.625-9.75h18c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125h-18c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125z" />
+    </svg>
+    
+   
+  </div>
+  <div class="">
+   <h3 class=" text-xl font-extrabold">Gift Certificates</h3>
+   <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+   <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+ </div>
 
 
-</div>
+ <!-- fourth -->
 
+ <div class="  text-center">
+  <div class=" flex justify-center items-center">
+    <i class=" w-12 h-12 flex items-center justify-center  bg-slate-200  rounded-3xl  text-3xl fa-solid fa-apple-whole"></i>
+    
+   
+  </div>
+  <div class="">
+   <h3 class=" text-xl font-extrabold">Integrated Supplier</h3>
+   <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+   <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+ 
+
+ <!-- fifth -->
+ <div class=" text-center">
+  <div class=" flex justify-center items-center">
+    <i class="fa-solid fa-ice-cream text-3xl bg-slate-200 w-12 h-12 flex items-center justify-center rounded-3xl "></i>
+   
+  </div>
+  <div class="">
+   <h3 class=" text-xl font-extrabold">Sustainable Practice</h3>
+   <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+   <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+ </div>
+
+ <!-- sixth -->
+
+<div class=" order-2 border-indigo-600 text-center">
+  <div class=" flex justify-center items-center">
+    <i class="fa-regular fa-thumbs-up text-3xl bg-slate-200 w-12 h-12 flex items-center justify-center rounded-3xl "></i>
+   
+  </div>
+  <div class="">
+   <h3 class=" text-xl font-extrabold">The Benefits Only</h3>
+   <div class="flex justify-center items-center"><p class="  w-24 border border-slate-500 my-2.5"></p></div>
+   <p class="text-sm font-medium">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+  </div>
+ </div>
 </section>
   </main>
 
